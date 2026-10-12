@@ -1,0 +1,17 @@
+
+FROM python:3.12-slim
+
+
+WORKDIR /app
+
+
+COPY requirements.txt .
+
+
+RUN pip install -r requirements.txt
+
+
+COPY web_app.py .
+
+
+CMD ["python3", "web_app.py"]

@@ -1,0 +1,7 @@
+.env
+.local/
+snap/
+.cache/
+.config/
+*.log
+*.db
